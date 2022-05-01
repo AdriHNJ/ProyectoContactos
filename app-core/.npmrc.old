@@ -1,0 +1,12 @@
+ registry=https://pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/registry/ 
+                        
+ always-auth=true
+
+ ; begin auth token
+ //pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/registry/:username=1370773
+ //pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/registry/:_password=cGFkbzJ3aHJ6czY2eGZpeHdhY2VzdGl3YTVxeDNlazJ4MnFjY21kcDdzbXl3eG52Zm5xYQ==
+ //pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/registry/:email=juanmi@ruanocloud.com
+ //pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/:username=1370773
+ //pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/:_password=cGFkbzJ3aHJ6czY2eGZpeHdhY2VzdGl3YTVxeDNlazJ4MnFjY21kcDdzbXl3eG52Zm5xYQ==
+ //pkgs.dev.azure.com/1370773/Portal2020/_packaging/Portal/npm/:email=juanmi@ruanocloud.com
+ ; end auth token

@@ -1,0 +1,8 @@
+{
+  "items": [],
+  "baseTheme": "material.orange.dark",
+  "outputColorScheme": "additional",
+  "makeSwatch": true,
+  "base": true,
+  "widgets": ["treeview", "navbar"]
+}

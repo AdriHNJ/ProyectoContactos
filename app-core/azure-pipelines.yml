@@ -1,0 +1,64 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  - Desarrollo
+
+pool:
+  vmImage: "windows-latest"
+
+# Set variables
+variables:
+  directory: .
+  stage: development
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "14.x"
+    displayName: "Install Node.js"
+
+  - script: npm install
+    displayName: "npm install"
+    workingDirectory: $(directory)
+
+  - task: Npm@1
+    inputs:
+      command: "custom"
+      workingDir: "$(directory)"
+      customCommand: "run generate-build-meta"
+
+  - script: set "REACT_APP_STAGE=$(stage)" && npm run build
+    displayName: "npm build"
+    workingDirectory: $(directory)
+
+  - task: CopyFiles@2
+    displayName: "Copy files"
+    inputs:
+      sourceFolder: "$(directory)/build"
+      Contents: "**/*"
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      cleanTargetFolder: true
+  - task: CopyFiles@2
+    displayName: "Copy webconfig"
+    inputs:
+      sourceFolder: "$(directory)/webconfig"
+      Contents: "web.config"
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      OverWrite: true
+      cleanTargetFolder: false
+  - task: ArchiveFiles@2
+    displayName: "Archive files"
+    inputs:
+      rootFolderOrFile: "$(Build.ArtifactStagingDirectory)"
+      includeRootFolder: false
+      archiveType: zip
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      replaceExistingArchive: true
+
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish Build Artifacts"
+    inputs:
+      pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip

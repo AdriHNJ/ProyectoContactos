@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Usamos BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gestión Clientes Potenciales</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <table class="table table-hover">
+            <thead>
+                <tr class="bg-primary text-white">
+                    <th scope="col">ID</th>
+                    <th scope="col">cifEmpresa</th>
+                    <th scope="col">empresa</th>
+                    <th scope="col">acronimo</th>
+                    <th scope="col">tipoDeVia</th>
+                    <th scope="col">nombreDeVia</th>
+                    <th scope="col">restoDeVia</th>
+                    <th scope="col">numeroEnLaVia</th>
+                    <th scope="col">restoDeNumero</th>
+                    <th scope="col">codigoPostal</th>
+                    <th scope="col">localidad</th>
+                    <th scope="col">municipio</th>
+                    <th scope="col">provincia</th>
+                    <th scope="col">autonomia</th>
+                    <th scope="col">telefono</th>
+                    <th scope="col">codigoCnae</th>
+                    <th scope="col">literalCnaeVentas</th>
+                    <th scope="col">empleados</th>
+                    <th scope="col">created_at</th>
+                    <th scope="col">update_at</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% results.forEach((clientes)=> { %>
+                <tr>
+                    <td><%= clientes.ID %></td>
+                    <td><%= clientes.cifEmpresa %></td>
+                    <td><%= clientes.empresa %></td>
+                    <td><%= clientes.acronimo %></td>
+                    <td><%= clientes.tipoDeVia %></td>
+                    <td><%= clientes.nombreDeVia %></td>
+                    <td><%= clientes.restoDeVia %></td>
+                    <td><%= clientes.numeroEnLaVia %></td>
+                    <td><%= clientes.restoDeNumero %></td>
+                    <td><%= clientes.codigoPostal %></td>
+                    <td><%= clientes.localidad %></td>
+                    <td><%= clientes.municipio %></td>
+                    <td><%= clientes.provincia %></td>
+                    <td><%= clientes.autonomia %></td>
+                    <td><%= clientes.telefono %></td>
+                    <td><%= clientes.codigoCnae %></td>
+                    <td><%= clientes.literalCnaeVentas %></td>
+                    <td><%= clientes.empleados %></td>
+                    <td><%= clientes.created_at %></td>
+                    <td><%= clientes.update_at %></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

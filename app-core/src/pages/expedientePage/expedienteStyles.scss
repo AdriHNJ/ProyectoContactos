@@ -1,0 +1,104 @@
+.form-container .dx-numberbox .dx-texteditor-input {
+  text-align: right;
+}
+#gridExpedientesComponent {
+  height: calc(100vh - 150px) !important;
+}
+.dx-toolbar-items-container {
+  padding: 0;
+  margin: 0;
+}
+.dx-datagrid-header-panel {
+  padding: 0;
+  margin: 0;
+}
+
+.dx-toolbar .dx-widget .dx-visibility-change-handler .dx-collection {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dx-toolbar {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dx-toolbar-items-container {
+  padding: 0px;
+}
+.dx-datagrid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dx-gridbase-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dx-datagrid-borders {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dx-datagrid .dx-gridbase-container .dx-datagrid-borders {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#gridExpedientesComponent {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.gridExpedientes {
+  height: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.dx-toolbar .dx-toolbar-items-container {
+  height: 35px !important;
+  max-height: 35px;
+}
+//PARA QUITAR FILTROS
+/* .dx-datagrid-filter-panel {
+  display: none;
+} */
+.dx-column-indicators {
+  float: right !important;
+}
+.dx-text-content-alignment-right {
+  //background-color: blue !important;
+  float: left;
+}
+/* @media (min-width: 320px) {
+  #gridExpedientesComponent {
+    height: calc(100vh + 150px) !important;
+  }
+}
+@media (min-width: 480px) {
+  #gridExpedientesComponent {
+    height: calc(100vh + 150px) !important;
+  }
+}
+@media (min-width: 600px) {
+  #gridExpedientesComponent {
+    height: calc(100vh + 150px) !important;
+  }
+}
+@media (min-width: 801px) {
+  #gridExpedientesComponent {
+    height: calc(100vh + 150px) !important;
+  }
+}
+@media (min-width: 1025px) {
+  #gridExpedientesComponent {
+    height: calc(100vh - 150px) !important;
+  }
+}
+@media (min-width: 1281px) {
+  #gridExpedientesComponent {
+    height: calc(100vh - 125px) !important;
+    // background-color: blue;
+  }
+} */
+
+/* html,
+body {
+  height: 100% !important;
+  width: 100% !important;
+}
+ */

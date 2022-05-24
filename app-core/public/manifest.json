@@ -1,0 +1,25 @@
+{
+  "short_name": "Portal de despachos",
+  "name": "Portal de despachos El Gestor",
+  "icons": [
+    {
+      "src": "logoPortal64.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logoPortal192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logoPortal512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

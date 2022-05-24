@@ -1,0 +1,92 @@
+#link5 img {
+  vertical-align: middle;
+}
+#link5 {
+  padding: 0px 1px 0px 1px;
+  text-align: center;
+  margin: none;
+  width: auto;
+  height: auto;
+  z-index: 1600;
+  margin-right: 0.7%;
+  border-radius: 3px 3px 3px 3px !important;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform-origin: bottom right;
+  right: 0 !important;
+  bottom: 50% !important;
+}
+#link5 > .dx-button-content {
+  font-size: small;
+  padding: 0;
+  right: 0;
+}
+#link5:before {
+  border: 15px solid gray;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -28px;
+  z-index: 1600;
+  left: calc(50% - 15px);
+}
+
+#link5 > .dx-button-has-text .dx-button-content {
+  font-size: x-small;
+  padding: 0% !important;
+  right: 0;
+}
+
+#ContenedorFeebBack {
+  flex-direction: "column";
+  align-items: "center";
+  right: 10px;
+  margin: 0;
+  height: 0% !important;
+  width: 0% !important;
+  display: none;
+  visibility: hidden;
+}
+#ContenedorFeedBack::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border-top: 20px solid blue;
+  border-top-color: inherit;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  display: none; /* fix triangulo al final de la pagina*/
+}
+
+#container {
+  padding: 10px;
+}
+
+#container ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#container ul li {
+  display: inline-block;
+  width: 160px;
+  margin: 10px;
+}
+
+#container ul li img {
+  width: 100px;
+}
+
+.button-info {
+  margin: 10px;
+}
+
+.dx-popup-content p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}

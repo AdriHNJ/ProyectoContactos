@@ -1,0 +1,26 @@
+#gridExpedientesComponent
+  > div
+  > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated.dx-last-row-border
+  > div
+  > div
+  > div.dx-scrollable-content
+  > div
+  > table
+  > tbody
+  > tr.dx-row.dx-group-row.dx-row-focused.dx-cell-focus-disabled
+  > td:nth-child(11)
+  > div {
+  text-align: left;
+}
+//PARA QUITAR FILTROS
+/* .dx-datagrid-filter-panel-left {
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+} */
+
+/* .dx-datagrid-filter-panel {
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+} */
